@@ -1,0 +1,210 @@
+body{
+    margin:0%;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: content-box;
+
+    
+}
+
+
+header{
+    width: 94%;
+    height: 60 px;
+}
+
+nav{
+    /justificar a la derecha/
+    height: 47px;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    padding: 8px;
+
+}
+
+header nav .nav-right-section{
+    
+    width: 30px;
+    /* Eliminar puntitos */
+    list-style: none;
+    /* Propiedad flex*/
+    display: flex;
+    justify-content: center;
+    /centrado verticalmente/
+    align-items: center;
+    height: auto;
+}
+
+a{
+    /remover líneas de abajo/
+    text-decoration: none;
+}
+nav .nav-right-section a{
+    margin-right: 25px;
+    color:rgba(0,0,0,.87);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /Escala la imagen al mayor tamaño posible sin recortarla ni estirarla/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px; 
+    border-radius: 50px; 
+}
+
+/*Buscador-main*/
+
+main{
+    margin-top: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width:530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* anchura de línea, estilo de línea y color de línea  */
+    border: 1px /* es lo ancho de la línea*/  solid #dfe1e5 ;
+    width:525px ;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+main .main-input input{
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 480px;
+}
+
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 1px 6px 0px #843eec47 ;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+
+/* cam icon */
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    height: 15px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+
+main .main-buttons{
+    width: 530px; 
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border:0; 
+    background-color: #f8f9fa;
+    font-size: 17px;
+    color: #3c4043 ;
+    height: 40px;
+    /Redondeado de botones/
+    border-radius: 4px;
+    /* Margen interno */
+    padding: 0 15px;
+    /Margen entre botones/
+    margin-right: 15px;
+}
+
+/* Aqui va el efecto hover de los botones */
+main .main-buttons button:hover{
+    /*sombra, color de texto, */
+    border-color: blue;
+    padding: 30px;
+    transition-duration: 20s;
+    border: 2px solid blue;
+}
+
+/*  FOOTER  */
+footer{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width:100%;
+    height: 90px;
+    background-color: #E5E2E2 ;
+    margin-bottom: 100px;
+    padding:0 30px;
+    margin-top: 240px;
+    
+}
+footer section{
+    
+    display:flex;
+    align-items: center;
+    height: 40%;
+}
+
+footer section.more-info{
+    border-top:#3c4043 solid 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer section.more-info div {
+    display:flex;
+    gap: 20px;
+}
+
+footer section.more-info div a{
+    text-decoration: none;
+    color: black;
+}
